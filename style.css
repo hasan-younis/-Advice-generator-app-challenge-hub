@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+.contanir{
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
+.card{
+    width: 90% ;
+    height:auto;
+    background-color:  hsl(217, 19%, 24%);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    
+
+}
+.advice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+}
+
+.advice > h5{
+    color:hsl(150, 100%, 66%) ;
+    letter-spacing:0.5rem;
+}
+.advice > h2{
+    color:white ;
+    font-size: 28px;
+}
+.btn{
+    position: absolute;
+    /* top: 90%;
+    right: 40%; */
+    bottom: 0;
+    transform: translate(0 , 50%);
+    padding: 20px;
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.desktop{
+    display:none;
+    padding-bottom: 35px;
+
+}
+.mobile{
+    padding-bottom: 35px;
+}
+@media screen and (min-width:992px){
+
+    .desktop{
+        display:block;
+    }
+    .mobile{
+        display: none;
+    }
+
+}
+#spinner:not([hidden]) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #spinner::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #f25a41;
+    border-radius: 100%;
+    will-change: transform;
+    animation: spin 1s infinite linear
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

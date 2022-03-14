@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contanir">
+    <div class="card">
+      <div hidden id="spinner"></div>
+      <div class="advice">
+        <h5 >ADVICE#<span id="advId"></span> </h5>
+        <h2 id="advTitle"> </h2>
+      </div>
+      <img  class="mobile" src="./images/pattern-divider-mobile.svg" alt="pattern-divider-mobile">
+      <img  class="desktop" src="./images/pattern-divider-desktop.svg" alt="pattern-divider-desktop">
+      <button class="btn" onclick="fetching()"><img src="./images/icon-dice.svg" alt="icon-dice"></button>
+    </div>
+  </div>
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/hasan-younis">Hasan Younis</a>.
+  </div>
+  <script src="./API.js"></script>
+</body>
+
+</html>
